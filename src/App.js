@@ -6,6 +6,8 @@ import HowPeople from "./HowPeople";
 import LinkYouPage from "./linkYouPage";
 import YourAccount from "./YourAccount";
 import StepByStep from "./StepByStep";
+import "./App.css"; // Styles
+
 
 const App = () => {
   const { t } = useTranslation();
@@ -130,4 +132,8 @@ function RegistrationLogin() {
   );
 };
 
+
+
 export default App;
+
+
