@@ -75,10 +75,18 @@ function RegistrationLogin() {
       <div className="greeting-container">
         {isUserRegistered ? (
           <>
-            <h1>{t('Hi')}, {user.firstName} {user.lastName}!</h1>
+            {/* <h1>{t('Hi')}, {user.firstName} {user.lastName}! <br/></h1>
+            <br/> */}
+           
+
+      
             <li>
+            <span>{t('Hi')},</span>
+              <span>{user.firstName} {user.lastName}!</span>
+              <br/>
+              <br/>
               <Link to="/profile">{t('PERSONAL_ACCOUNT')}</Link>
-            </li>
+            </li>      
 
           </>
           
