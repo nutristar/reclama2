@@ -1,0 +1,117 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Space between the buttons */
+}
+.greeting-container {
+  display: flex; /* Позволяет центрировать элементы внутри */
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Отступы вокруг кнопки */
+}
+
+.login-button,  .signup-button {
+  display: inline-block;
+  background-color: #0078d7; /* Цвет фона кнопки */
+  color: white; /* Цвет текста */
+  text-decoration: none; /* Убрать подчеркивание */
+  padding: 10px 20px; /* Внутренние отступы */
+  border-radius: 8px; /* Скругленные углы */
+  font-size: 12px; /* Размер текста */
+  font-weight: 60; /* Жирность текста */
+  text-align: center;
+  transition: background-color 0.3s ease; /* Плавный переход при наведении */
+  max-width: 200px; /* Максимальная ширина */
+  width: 80%; /* Адаптация ширины */
+  box-sizing: border-box; /* Учитывать отступы и границы в размерах */
+}
+
+.login-button:hover {
+  background-color: #005a9e; /* Цвет кнопки при наведении */
+}
+
+.menu-list {
+  list-style-type: none; /* Убираем стандартные маркеры списка */
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff; /* Белый фон */
+  border-radius: 10px; /* Скругленные углы */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+  padding: 20px;
+}
+
+.menu-list h2 {
+  margin: 0 0 15px;
+  font-size: 18px;
+  color: #333; /* Цвет заголовка */
+  text-align: center; /* Центрируем заголовок */
+  font-weight: bold;
+}
+
+.menu-list li {
+  margin-bottom: 10px; /* Отступы между пунктами */
+  text-align: left;
+}
+
+.menu-list li a {
+  text-decoration: none; /* Убираем подчеркивание у ссылок */
+  color: #0078d7; /* Цвет текста */
+  font-weight: bold;
+  padding: 10px 15px;
+  display: block;
+  border-radius: 8px; /* Скругленные углы для пунктов */
+  transition: background-color 0.3s, color 0.3s; /* Плавный переход для ховера */
+}
+
+.menu-list li a:hover {
+  background-color: #0078d7; /* Синий фон при наведении */
+  color: #ffffff; /* Белый текст при наведении */
+}
+@media (max-width: 768px) {
+  .menu-list {
+    padding: 10px;
+  }
+
+  .menu-list li a {
+    font-size: 16px; /* Уменьшаем размер текста */
+    padding: 8px 10px;
+  }
+}

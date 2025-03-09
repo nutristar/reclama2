@@ -1,0 +1,55 @@
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between the buttons */
+}
+
+
+.login-button, .signup-button {
+  display: inline-block;
+  background-color: #0078d7; /* Цвет фона кнопки */
+  color: white; /* Цвет текста */
+  text-decoration: none; /* Убрать подчеркивание */
+  padding: 10px 20px; /* Внутренние отступы */
+  border-radius: 8px; /* Скругленные углы */
+  font-size: 12px; /* Размер текста */
+  font-weight: 60; /* Жирность текста */
+  text-align: center;
+  transition: background-color 0.3s ease; /* Плавный переход при наведении */
+  max-width: 200px; /* Максимальная ширина */
+  width: 80%; /* Адаптация ширины */
+  box-sizing: border-box; /* Учитывать отступы и границы в размерах */
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6; /* Интерлиньяж для читаемости */
+  color: #333; /* Серый цвет текста */
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9; /* Светлый фон */
+}
+.container {
+  max-width: 800px; /* Ограничим ширину контента */
+  margin: 20px auto; /* Центрируем */
+  padding: 20px;
+  background: #ffffff; /* Белый фон */
+  border-radius: 10px; /* Скругленные углы */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для объема */
+}
+@media (max-width: 768px) {
+  .menu-list {
+    padding: 10px;
+  }
+
+  .menu-list li a {
+    font-size: 16px; /* Уменьшаем размер текста */
+    padding: 8px 10px;
+  }
+}
+/* body {  background: linear-gradient(135deg, #e3f2fd, #bbdefb);} */
