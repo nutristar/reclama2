@@ -91,7 +91,6 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import TokenRetriever from "./TokenRetriever";
-import "./index.css"; // Styles
 import reportWebVitals from "./reportWebVitals";
 import "./i18n"; // i18n configuration
 import { useTranslation } from "react-i18next";
