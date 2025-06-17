@@ -7,6 +7,10 @@ import LinkYouPage from "./linkYouPage";
 import YourAccount from "./YourAccount";
 import StepByStep from "./StepByStep";
 import "./App.css"; // Styles
+import ContactForm from "./Email";
+import JpgViewer from './PlatesRu';
+import JpgViewerPL from './PlatesPl';
+import JpgViewerEN from './PlatesEn';
 
 
 const App = () => {
@@ -118,6 +122,10 @@ function RegistrationLogin() {
             <li>
               <Link to="/slots">{t('Buy_ free_slots')}</Link>
             </li>
+
+            <li>
+              <Link to="/contact">{t('Contact us')}</Link>
+            </li>
           </ul>
         </nav>
 
@@ -131,7 +139,11 @@ function RegistrationLogin() {
             <Route path="/" element={<StepByStep />} />
             <Route path="/slots" element={<DynamoDBTable />} />
             <Route path="/howpeoples" element={<HowPeople />} />
-            <Route path="/link_to_your_site" element={<LinkYouPage />} />
+            <Route path="/link_to_your_site" element={<LinkYouPage />} />   
+            <Route path="/contact" element={<ContactForm />} />
+            <Route path="/ru_plates" element={<JpgViewer />} />
+            <Route path="/en_plates" element={<JpgViewerEN />} />
+            <Route path="/pl_plates" element={<JpgViewerPL />} />
 
           </Routes>
         </div>
